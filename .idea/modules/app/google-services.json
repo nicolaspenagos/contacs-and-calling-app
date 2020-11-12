@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "439148381505",
+    "firebase_url": "https://contact-and-calling-app.firebaseio.com",
+    "project_id": "contact-and-calling-app",
+    "storage_bucket": "contact-and-calling-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439148381505:android:fb247f0f2a5b57cb92cdc0",
+        "android_client_info": {
+          "package_name": "com.example.contacs_and_calling_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439148381505-9b43m5b7tbfpe6kvu0m3rnell5ltvov8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.contacs_and_calling_app",
+            "certificate_hash": "989af0aff3e58d7d9897c69dcb5abe90f1617029"
+          }
+        },
+        {
+          "client_id": "439148381505-sfneij5ujed45id6srirhn561nu8j90h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDifEDn5sHdnXb6eG5TWq4-ntboCFh89JE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439148381505-sfneij5ujed45id6srirhn561nu8j90h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
