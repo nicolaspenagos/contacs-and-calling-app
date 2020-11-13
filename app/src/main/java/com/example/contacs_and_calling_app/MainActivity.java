@@ -7,6 +7,7 @@ package com.example.contacs_and_calling_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
 import android.widget.Button;
@@ -47,10 +48,28 @@ public class MainActivity extends AppCompatActivity {
 
                 (view)->{
 
+                    String username = usernameEditText.getText().toString();
+                    if(checkUsername(username)){
+
+                        Intent i = new Intent(this, ContactsActivity.class);
+                        i.putExtra("username", username);
+                        startActivity(i);
+
+                    }
+
                 }
 
         );
 
+        database = FirebaseDatabase.getInstance();
+
+    }
+
+    // -------------------------------------
+    // Methods
+    // -------------------------------------
+    public boolean checkUsername(String username){
+        return ( username == null || username.equals("")) ? false : true;
     }
 
 }
