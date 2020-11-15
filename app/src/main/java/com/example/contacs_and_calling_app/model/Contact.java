@@ -5,6 +5,8 @@
  */
 package com.example.contacs_and_calling_app.model;
 
+import androidx.annotation.NonNull;
+
 /*
 * This class will represent each contact of a user
  */
@@ -30,6 +32,15 @@ public class Contact {
         this.phoneNumber = phoneNumber;
         this.name = name;
 
+    }
+
+    // -------------------------------------
+    // Methods
+    // -------------------------------------
+    @NonNull
+    @Override
+    public String toString() {
+        return name + "\n" + "  " + phoneNumber;
     }
 
     // -------------------------------------

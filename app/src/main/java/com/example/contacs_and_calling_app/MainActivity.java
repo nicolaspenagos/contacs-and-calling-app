@@ -51,9 +51,9 @@ public class MainActivity extends AppCompatActivity {
                     String username = usernameEditText.getText().toString();
                     if(checkUsername(username)){
 
-                        Intent i = new Intent(this, ContactsActivity.class);
-                        i.putExtra("username", username);
-                        startActivity(i);
+                        Intent intent = new Intent(this, ContactsActivity.class);
+                        intent.putExtra("username", username);
+                        startActivity(intent);
 
                     }
 
@@ -63,6 +63,12 @@ public class MainActivity extends AppCompatActivity {
 
         database = FirebaseDatabase.getInstance();
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        usernameEditText.setText("");
     }
 
     // -------------------------------------
