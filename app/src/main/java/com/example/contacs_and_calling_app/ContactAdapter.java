@@ -1,3 +1,8 @@
+/**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * @author Nicolás Penagos Montoya
+ * nicolas.penagosm98@gmail.com
+ **~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
 package com.example.contacs_and_calling_app;
 
 import android.Manifest;
@@ -21,11 +26,21 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
+
+/*
+ * This class will represent the contacts list on the screen.
+ */
 public class ContactAdapter extends BaseAdapter {
 
+    // -------------------------------------
+    // Atributtes
+    // -------------------------------------
     private ArrayList<Contact> contacts;
     private String currentBranch;
 
+    // -------------------------------------
+    // Methods
+    // -------------------------------------
     public void addContact(Contact contact){
 
         contacts.add(contact);
@@ -109,9 +124,6 @@ public class ContactAdapter extends BaseAdapter {
         return view;
 
     }
-
-
-
 
     public String getCurrentBranch() {
         return currentBranch;
