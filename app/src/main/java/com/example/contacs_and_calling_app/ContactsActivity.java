@@ -7,7 +7,9 @@ package com.example.contacs_and_calling_app;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
@@ -62,6 +64,10 @@ public class ContactsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_contacts);
+
+        ActivityCompat.requestPermissions(this,new String[]{
+                Manifest.permission.CALL_PHONE,
+        }, 1);
 
         nameEditText = findViewById(R.id.nameEditText);
         phonenumberEditText = findViewById(R.id.phonenumberEditText);

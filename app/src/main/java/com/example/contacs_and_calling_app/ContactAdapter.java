@@ -93,6 +93,7 @@ public class ContactAdapter extends BaseAdapter {
 
                    if(ActivityCompat.checkSelfPermission(parent.getContext(), Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
                        Log.e("debug", "Permission denied");
+
                        return;
                    }
 
